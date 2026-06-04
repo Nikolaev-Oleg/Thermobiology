@@ -18,19 +18,19 @@
 
 #Import packages####
 
-library(readxl)
-library(ggplot2)
+#library(readxl)
+#library(ggplot2)
 library(lme4)
 library(lmerTest)
-library(DrugClust)
-library(dplyr)
+library(DrugClust) #removed from CRAN
+#library(dplyr)
 library(tidyverse)
 library(shiny)
 library(vegan)
 library(data.table)
 library(wPerm)
 library(cowplot)
-library(splancs)
+#library(splancs)
 #Load and preprocess data####
 
 data <- read.csv("data.csv")
