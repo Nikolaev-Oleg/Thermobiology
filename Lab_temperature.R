@@ -4,7 +4,7 @@ library(ggplot2)
 library(tidyverse)
 library(ggpubr)
 #Data####
-df<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1-bqugVEw9JjK-UMyr74AkxBnkdbv0LYp8bjcVfBGGpg/edit?usp=sharing')
+df<-read.csv('logger_data.csv')
 df_slice<-df %>%
   group_by(date) %>%
   top_n(1, wt=temp)
